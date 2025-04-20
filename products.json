@@ -1,0 +1,171 @@
+[
+  {
+    "id": 1,
+    "name": "Wireless Headphones",
+    "price": 59.99,
+    "image": "Assets/Imag/Headphones.jpg",
+    "description": "Comfortable and high-quality sound for daily use."
+  },
+  {
+    "id": 2,
+    "name": "Smart Watch",
+    "price": 120.0,
+    "image": "Assets/Imag/Watch.jpg",
+    "description": "Track fitness and get notifications on the go."
+  },
+  {
+    "id": 3,
+    "name": "Bluetooth Speaker",
+    "price": 39.99,
+    "image": "Assets/Imag/speaker.jpg",
+    "description": "Powerful sound in a compact design."
+  },
+  {
+    "id": 4,
+    "name": "AirPods",
+    "price": 70.0,
+    "image": "Assets/Imag/airpods.jpg",
+    "description": "Comfortable and So recommended."
+  },
+  {
+    "id": 5,
+    "name": "Anker USB C Hub",
+    "price": 95.0,
+    "image": "Assets/Imag/Anker.jpg",
+    "description": "Essential accessory for modern professionals and tech enthusiasts."
+  },
+  {
+    "id": 6,
+    "name": "USB Card Reader",
+    "price": 100.0,
+    "image": "Assets/Imag/CardReader.jpg",
+    "description": "high-speed data transfer, ensuring quick access to large files."
+  },
+  {
+    "id": 7,
+    "name": "Power Bank",
+    "price": 50.8,
+    "image": "Assets/Imag/PowerBank.jpg",
+    "description": "Fast-charging technology, and even wireless charging capabilities."
+  },
+    {
+    "id": 15,
+    "name": "Webcam",
+    "price": 70.0,
+    "image": "Assets/Imag/webcam.jpg",
+    "description": "High-definition video quality for streaming and calls."
+  },
+  {
+    "id": 8,
+    "name": "Portable SSD",
+    "price": 140.0,
+    "image": "Assets/Imag/SSD.jpg",
+    "description": "High-speed data transfer, and a compact design."
+  },
+  {
+    "id": 9,
+    "name": "Wireless Charger",
+    "price": 40.3,
+    "image": "Assets/Imag/WirelessCharger.jpg",
+    "description": "Fast and efficient charging for your devices."
+  },
+  {
+    "id": 10,
+    "name": "Laptop Stand",
+    "price": 55.0,
+    "image": "Assets/Imag/stand.jpg",
+    "description": "Ergonomic design for better posture and comfort."
+  },
+  {
+    "id": 10,
+    "name": "Phone Stand",
+    "price": 45.0,
+    "image": "Assets/Imag/pstand.jpg",
+    "description": "compact, portable, and compatible with a wide range of devices."
+  },
+  {
+    "id": 11,
+    "name": "Wireless Mouse",
+    "price": 35.0,
+    "image": "Assets/Imag/mouse.jpg",
+    "description": "Ergonomic design and customizable buttons."
+  },
+  {
+    "id": 12,
+    "name": "Mechanical Keyboard",
+    "price": 80.0,
+    "image": "Assets/Imag/keyboard.jpg",
+    "description": "Tactile feedback and customizable RGB lighting."
+  },
+  {
+    "id": 13,
+    "name": "HDMI Cable",
+    "price": 25.0,
+    "image": "Assets/Imag/hdmi.jpg",
+    "description": "High-speed data transfer for your devices."
+  },
+  {
+    "id": 14,
+    "name": "Laptop Sleeve",
+    "price": 30.0,
+    "image": "Assets/Imag/sleeve.jpg",
+    "description": "Stylish and protective sleeve for your laptop."
+  },
+
+  {
+    "id": 16,
+    "name": "Printer",
+    "price": 180.0,
+    "image": "Assets/Imag/printer.jpg",
+    "description": "Wireless connectivity, mobile printing, and eco-friendly."
+  },
+  {
+    "id": 17,
+    "name": "Projector",
+    "price": 200.0,
+    "image": "Assets/Imag/projector.jpg",
+    "description": "Provide superior brightness and color accuracy."
+  },
+  {
+    "id": 18,
+    "name": "USB Cable",
+    "price": 15.0,
+    "image": "Assets/Imag/USB.jpg",
+    "description": "Ensuring compatibility across a wide range of devices."
+  },
+  {
+    "id": 19,
+    "name": "Smartphone",
+    "price": 699.99,
+    "image": "Assets/Imag/smartphone.jpg",
+    "description": "Latest model with advanced features and performance."
+  },
+  {
+    "id": 20,
+    "name": "Tablet",
+    "price": 499.99,
+    "image": "Assets/Imag/tablet.jpg",
+    "description": "Versatile device for work and play."
+  },
+  {
+    "id": 21,
+    "name": "Ipad",
+    "price": 899.99,
+    "image": "Assets/Imag/ipad.jpg",
+    "description": "perfect for creative professionals, students, and casual users alike."
+  },
+  {
+    "id": 22,
+    "name": "Smart TV",
+    "price": 1200.0,
+    "image": "Assets/Imag/smarttv.jpg",
+    "description": "4K resolution and smart features for a premium viewing experience."
+  },
+  {
+    "id": 23,
+    "name": "Gaming Console",
+    "price": 499.99,
+    "image": "Assets/Imag/console.jpg",
+    "description": "Latest model with exclusive games and features."
+  }
+]
