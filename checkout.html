@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart CheckOut</title>
+  <link rel="stylesheet" href="CSS/style.css" />
+
+</head>
+
+<body>
+
+  <header>
+    <a href="index.html">Home</a>
+    <a href="cart.html">Cart</a>
+
+    <h1>🧾 Checkout </h1>
+  </header>
+
+  <main id="checkout-container">
+    <!-- Checkout summary and form will be injected here -->
+  </main>
+
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+      if (cart.length === 0) {
+        document.getElementById("checkout-container").innerHTML = "<p>Your cart is empty.</p>";
+        return;
+      }
+
+      fetch("Data/products.json")
+        .then(res => res.json())
+        .then(products => renderCheckout(products, cart));
+    });
+
+    function renderCheckout(products, cart) {
+      const container = document.getElementById("checkout-container");
+      let total = 0;
+      let summaryHTML = `
+         <div class="order-summary">
+           <h2>Order Summary</h2>
+           <ul>
+      `;
+
+
+      cart.forEach(item => {
+        const product = products.find(p => p.id === item.id);
+        const subtotal = product.price * item.quantity;
+        total += subtotal;
+
+        summaryHTML += `<li><strong>${product.name}</strong> × ${item.quantity} - $${subtotal.toFixed(2)}</li>`;
+      });
+
+      summaryHTML += `
+          </ul>
+            <p class="total-amount"><strong>Total: $${total.toFixed(2)}</strong></p>
+        </div>
+      `;
+
+      const formHTML = `
+        <h2 style="text-align: center">Your Info</h2>
+        <form onsubmit="placeOrder(); return false;">
+        <label>Name:</label><br>
+        <input type="text" id="name" placeholder="John Doe" required /><br><br>
+
+        <label>Email:</label><br>
+        <input type="email" id="email" placeholder="you@example.com" required /><br><br>
+
+        <button type="submit">Place Order</button>
+      `;
+
+      container.innerHTML = summaryHTML + formHTML;
+    }
+
+    function placeOrder() {
+      // Optional: you could store the user info here
+      const name = document.getElementById("name").value;
+      const email = document.getElementById("email").value;
+
+      // Clear cart
+      localStorage.removeItem("cart");
+
+      // Redirect to success page
+      window.location.href = "success.html";
+    }
+  </script>
+
+</body>
+
+</html>
